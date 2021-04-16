@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from "./components/Title"
+import Upload from "./components/Upload"
+import Display from "./components/Display"
+import Model from "./components/model"
+import { useState } from 'react';
 
 function App() {
+  const [selectedImg, setSelectedImg] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Title />
+      <Upload />
+      <Display setSelectedImg={setSelectedImg}/>
+      {selectedImg && <Model selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}
     </div>
   );
 }

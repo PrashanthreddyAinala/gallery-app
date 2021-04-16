@@ -1,0 +1,90 @@
+[debug] [2021-04-16T07:32:36.396Z] ----------------------------------------------------------------------
+[debug] [2021-04-16T07:32:36.399Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\prashanth reddy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-16T07:32:36.399Z] CLI Version:   9.10.0
+[debug] [2021-04-16T07:32:36.399Z] Platform:      win32
+[debug] [2021-04-16T07:32:36.399Z] Node Version:  v14.16.0
+[debug] [2021-04-16T07:32:36.401Z] Time:          Fri Apr 16 2021 13:02:36 GMT+0530 (India Standard Time)
+[debug] [2021-04-16T07:32:36.401Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-16T07:32:36.415Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-16T07:32:36.416Z] > authorizing via signed-in user (prashanthreddyainala@gmail.com)
+[debug] [2021-04-16T07:32:36.416Z] [iam] checking project todo-app-c4873 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-16T07:32:36.419Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-16T07:32:36.419Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T07:32:39.753Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 16 Apr 2021 07:32:39 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:32:39.825Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-app-c4873:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-16T07:32:47.130Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 16 Apr 2021 07:32:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1185","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:32:47.134Z] > refreshing access token with scopes: []
+[debug] [2021-04-16T07:32:47.135Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T07:32:50.687Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 16 Apr 2021 07:32:49 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:32:50.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-c4873 [none]
+[debug] [2021-04-16T07:32:52.831Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-c4873 200
+[debug] [2021-04-16T07:32:52.832Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-app-c4873 {"projectId":"todo-app-c4873","projectNumber":"521719114941","displayName":"Todo-app","name":"projects/todo-app-c4873","resources":{"hostingSite":"todo-app-c4873","storageBucket":"todo-app-c4873.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'todo-app-c4873'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-04-16T07:32:52.839Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-16T07:32:52.839Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T07:32:56.027Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 16 Apr 2021 07:32:55 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:32:56.130Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-04-16T07:33:01.010Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 16 Apr 2021 07:32:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[todo-app-c4873]: beginning deploy... 
+[info] i  hosting[todo-app-c4873]: found 2 files in build 
+[debug] [2021-04-16T07:33:01.038Z] > refreshing access token with scopes: []
+[debug] [2021-04-16T07:33:01.038Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T07:33:01.048Z] [hosting] hash cache [YnVpbGQ] stored for 2 files
+[debug] [2021-04-16T07:33:01.049Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":16}
+[debug] [2021-04-16T07:33:05.466Z] <<< HTTP RESPONSE 200 {"date":"Fri, 16 Apr 2021 07:33:05 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:33:05.571Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions/086c21f1cd26d54d:populateFiles [none]
+[debug] [2021-04-16T07:33:05.571Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions/086c21f1cd26d54d:populateFiles {"files":{"/404.html":"daa499dd96d8229e73235345702ba32f0793f0c8e5c0d30e40e37a5872be57aa","/index.html":"b74e5e50b71a954031990b2ce5dbf386990cd955894ab9653d1e44bd55870dbe"}}
+[debug] [2021-04-16T07:33:09.133Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions/086c21f1cd26d54d:populateFiles 200
+[debug] [2021-04-16T07:33:09.134Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions/086c21f1cd26d54d:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/todo-app-c4873/versions/086c21f1cd26d54d/files"}
+[debug] [2021-04-16T07:33:09.134Z] [hosting][populate queue][FINAL] {"max":8097,"min":8097,"avg":8097,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":8097}
+[debug] [2021-04-16T07:33:09.135Z] [hosting] uploads queued: 0
+[debug] [2021-04-16T07:33:09.135Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1618558389135}
+[info] +  hosting[todo-app-c4873]: file upload complete 
+[debug] [2021-04-16T07:33:09.138Z] [hosting] deploy completed after 8125ms
+[debug] [2021-04-16T07:33:12.168Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "todo-app-c4873"
+    },
+    "site": "todo-app-c4873",
+    "version": "sites/todo-app-c4873/versions/086c21f1cd26d54d"
+  }
+]
+[info] i  hosting[todo-app-c4873]: finalizing version... 
+[debug] [2021-04-16T07:33:12.171Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-16T07:33:12.171Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-16T07:33:16.373Z] <<< HTTP RESPONSE 200 {"date":"Fri, 16 Apr 2021 07:33:15 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:33:16.447Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/versions/086c21f1cd26d54d?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-04-16T07:33:22.607Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 16 Apr 2021 07:33:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-16T07:33:22.608Z] [hosting] finalized version for todo-app-c4873: {"name":"sites/todo-app-c4873/versions/086c21f1cd26d54d","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-04-16T07:32:59.596042Z","createUser":{"email":"prashanthreddyainala@gmail.com"},"finalizeTime":"2021-04-16T07:33:20.854279Z","finalizeUser":{"email":"prashanthreddyainala@gmail.com"}}
+[info] +  hosting[todo-app-c4873]: version finalized 
+[info] i  hosting[todo-app-c4873]: releasing new version... 
+[debug] [2021-04-16T07:33:22.612Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-app-c4873/releases?version_name=sites/todo-app-c4873/versions/086c21f1cd26d54d  
+ {"message":null}
+[debug] [2021-04-16T07:33:57.522Z] Error: socket hang up
+    at connResetException (internal/errors.js:607:14)
+    at TLSSocket.socketOnEnd (_http_client.js:493:23)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:467:12)
+    at endReadableNT (internal/streams/readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Server Error. socket hang up
