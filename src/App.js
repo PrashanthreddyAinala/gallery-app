@@ -7,10 +7,11 @@ import { useState } from 'react';
 
 function App() {
   const [selectedImg, setSelectedImg] = useState(null);
+  const [darktheme, setDarktheme] = useState(false)
 
   return (
-    <div>
-      <Title />
+    <div className={darktheme ? "dark-theme" : "light-theme"}>
+      <Title setDark={setDarktheme} dark={darktheme}/>
       <Upload />
       <Display setSelectedImg={setSelectedImg}/>
       {selectedImg && <Model selectedImg={selectedImg} setSelectedImg={setSelectedImg}/>}

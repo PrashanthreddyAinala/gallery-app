@@ -2,6 +2,15 @@
 
 body {
   margin: 0px;
+}
+
+.dark-theme {
+  background-color: #040404;
+  color: white;
+  padding: 1rem;
+}
+
+.light-theme {
   background-color: white;
   color: #040404;
   padding: 1rem;
@@ -12,6 +21,13 @@ body {
   font-weight: bold;
   padding-left: 5rem;
   padding-top: 1rem;
+}
+
+.theme {
+  position: absolute;
+  right: 18rem;
+  transform: translateY(-140%);
+  font-size: 1.5rem;
 }
 
 .sub-title {
@@ -92,5 +108,15 @@ label {
     margin: 12rem auto;
     width: 15rem;
     height: 11rem;
+  }
+
+  .theme {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+
+  label {
+    transform: translate(-15%, -90%);
   }
 }
