@@ -4,12 +4,12 @@ import "firebase/firestore";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyA86OrdNftPgQM-z0PEokkvFJoI8wBHZpo",
-    authDomain: "truegallery-ebd05.firebaseapp.com",
-    projectId: "truegallery-ebd05",
-    storageBucket: "truegallery-ebd05.appspot.com",
-    messagingSenderId: "507630796640",
-    appId: "1:507630796640:web:d9de7106ca5754d39ea805"
+  apiKey: "AIzaSyDgOae3f6GW4jbNiiVNtx5plw3rKSPQaEc",
+  authDomain: "mygallery-1ee64.firebaseapp.com",
+  projectId: "mygallery-1ee64",
+  storageBucket: "mygallery-1ee64.appspot.com",
+  messagingSenderId: "49882539356",
+  appId: "1:49882539356:web:4676a593e778d0054f4d99"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

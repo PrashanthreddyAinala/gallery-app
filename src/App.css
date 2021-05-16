@@ -112,7 +112,6 @@ label {
 
   .theme {
     position: absolute;
-    right: 1rem;
     font-size: 1.5rem;
     transform: translateY(-150%);
   }
